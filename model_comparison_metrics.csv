@@ -1,0 +1,5 @@
+﻿model,model_type,test_auc,qini_coefficient,auuc_normalized
+LR,传统预测,0.9316655779583533,,
+LightGBM,传统预测,0.9471326439761979,,
+S-learner,uplift,,0.075559539166162,0.02986066500604631
+T-learner,uplift,,0.06982714026558168,0.027577035047710398

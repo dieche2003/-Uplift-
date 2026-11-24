@@ -1,0 +1,36 @@
+{
+  "target": "visit",
+  "estimand": "ITT",
+  "test_rows": 838776,
+  "test_file_sha256": "49a8f39dfef74907f32267695c517a54ddff5c91225b4416843b070a9d90cde9",
+  "top_k": [
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "visit_values": [
+    5,
+    10,
+    15
+  ],
+  "exposure_costs": [
+    0.5,
+    1,
+    2
+  ],
+  "currency_unit": "unspecified common currency unit for value and cost",
+  "effect_estimator": "within-policy subgroup treatment/control visit mean difference",
+  "random_strategy": "analytic expectation using full test population rates",
+  "comparison_basis": "equal target population size, not equal budget",
+  "cost_model": "N_target * mean(exposure | treatment=1, subgroup) * unit_cost",
+  "billed_exposures_per_exposed_sample_assumption": 1,
+  "roi_formula": "(incremental_visits * visit_value - advertising_cost) / advertising_cost",
+  "confidence_intervals_computed": false,
+  "other_operating_costs_included": false,
+  "conversion_used": false,
+  "scenario_rows": 108,
+  "comparison_rows": 72,
+  "figure_path": "D:\\xiangmu-guanggao\\figure\\roi_sensitivity.png",
+  "png_dpi": 600
+}

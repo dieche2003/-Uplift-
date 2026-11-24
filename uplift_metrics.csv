@@ -1,0 +1,3 @@
+﻿model,qini_coefficient,auuc_normalized,model_type
+S-learner,0.075559539166162,0.02986066500604631,uplift
+T-learner,0.06982714026558168,0.027577035047710398,uplift

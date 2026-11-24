@@ -1,0 +1,3 @@
+﻿model,target,n_features,validation_auc,test_auc,test_rows,model_file
+LR,visit,12,0.9294557455162213,0.9316655779583533,838776,lr_baseline.joblib
+LightGBM,visit,12,0.9458682619721425,0.9471326439761979,838776,lightgbm_baseline.joblib

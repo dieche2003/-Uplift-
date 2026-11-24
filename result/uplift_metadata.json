@@ -1,0 +1,67 @@
+{
+  "target": "visit",
+  "estimand": "ITT",
+  "features": [
+    "f0",
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9",
+    "f10",
+    "f11"
+  ],
+  "treatment_column": "treatment",
+  "exposure_used": false,
+  "train_file": "D:\\xiangmu-guanggao\\data\\train.parquet",
+  "test_file": "D:\\xiangmu-guanggao\\data\\test.parquet",
+  "test_file_sha256": "49a8f39dfef74907f32267695c517a54ddff5c91225b4416843b070a9d90cde9",
+  "train_rows": 2935714,
+  "test_rows": 838776,
+  "training_group_sizes": {
+    "0": 440357,
+    "1": 2495357
+  },
+  "test_row_id_definition": "zero-based positional row number in test.parquet",
+  "uplift_definition": "P(visit=1|X,treatment=1)-P(visit=1|X,treatment=0)",
+  "validation_used": false,
+  "test_used_for_tuning": false,
+  "methods": {
+    "s_learner": "SoloModel(dummy)",
+    "t_learner": "TwoModels(vanilla)"
+  },
+  "base_estimator_parameters": {
+    "boosting_type": "gbdt",
+    "class_weight": null,
+    "colsample_bytree": 1.0,
+    "importance_type": "split",
+    "learning_rate": 0.05,
+    "max_depth": -1,
+    "min_child_samples": 100,
+    "min_child_weight": 0.001,
+    "min_split_gain": 0.0,
+    "n_estimators": 500,
+    "n_jobs": 8,
+    "num_leaves": 31,
+    "objective": "binary",
+    "random_state": 42,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.0,
+    "subsample": 1.0,
+    "subsample_for_bin": 200000,
+    "subsample_freq": 0,
+    "deterministic": true,
+    "force_col_wise": true,
+    "verbosity": -1
+  },
+  "versions": {
+    "sklift": "0.5.1",
+    "lightgbm": "4.7.0",
+    "sklearn": "1.5.2",
+    "pandas": "2.2.2"
+  }
+}

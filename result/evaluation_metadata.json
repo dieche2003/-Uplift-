@@ -1,0 +1,15 @@
+{
+  "target": "visit",
+  "estimand": "ITT",
+  "test_rows": 838776,
+  "test_file_sha256": "49a8f39dfef74907f32267695c517a54ddff5c91225b4416843b070a9d90cde9",
+  "sklift_version": "0.5.1",
+  "qini_function": "sklift.metrics.qini_auc_score(negative_effect=True)",
+  "auuc_function": "sklift.metrics.uplift_auc_score",
+  "normalization": "(actual area - random area) / (perfect area - random area)",
+  "metric_label_dtype": "int64 (prevents uint8 subtraction underflow in sklift)",
+  "baseline_auc_recomputed": true,
+  "confidence_intervals_computed": false,
+  "figure_path": "D:\\xiangmu-guanggao\\figure\\qini_curve.png",
+  "png_dpi": 600
+}
